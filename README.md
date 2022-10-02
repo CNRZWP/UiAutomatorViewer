@@ -1,26 +1,29 @@
 ### 说明
-这个工程是[谷歌官方UIAutomatorViewer](https://android.googlesource.com/platform/tools/swt/+/refs/heads/android10-release/uiautomatorviewer/)改造而来，用来抓取UIAutomator控件的工具，支持独立运行，但因为其依赖于swt，所以需要在mac和windows下分别编译。
+Fork自项目：https://github.com/cmlanche/uiautomatorviewer-standalone
+
+### 改动
+1. 移除标题中的作者信息
+2. 替换窗口中的图标，解决大小不一致问题
+3. 修改默认窗口大小，避免图标不展示
+
+### 问题 (注意)
+<font color='red'>**树形图中无法展示 resource-id 信息**</font>
 
 ### 打包
-mvn clean package
+```mvn clean package```<br>
+![编译过程](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022232166.png)
+生成的 jar 文件位于 target 目录中：UiAutomatorViewer-2.0-all.jar
 
-### 启动
-mac下：
-```shell
-java -XstartOnFirstThread -jar uiautomatorviewer-standalone-1.0-SNAPSHOT-all.jar
-```
-windows下：
-```shell
-java -jar uiautomatorviewer-standalone-1.0-SNAPSHOT-all.jar
-```
+### 启动 (MacOS)
+```java -XstartOnFirstThread -jar UiAutomatorViewer-2.0-all.jar```
 
-### 源码来源
-源码来自[谷歌官方](https://android.googlesource.com/platform/tools/swt/+/refs/heads/android10-release/uiautomatorviewer/)
+### 源码
+[谷歌官方](https://android.googlesource.com/platform/tools/swt/+/refs/heads/android10-release/uiautomatorviewer/)
 
-查阅依赖后找到相关库：
+### 依赖库
 1. swt：https://download.eclipse.org/eclipse/downloads/drops4/I20200830-1800/#SWT
-2. jface: 下载[RCP Runtime Binary](https://download.eclipse.org/eclipse/downloads/drops4/I20200830-1800/)，解压后查找org.eclipse.core.commands_{version}.jar、org.eclipse.equinox.common_{version}.jar、org.eclipse.jface_{version}.jar
-3. 额外还包括其他依赖：
+2. jface: 下载 [RCP Runtime Binary](https://download.eclipse.org/eclipse/downloads/drops4/I20200830-1800/)，解压后查找org.eclipse.core.commands_{version}.jar、org.eclipse.equinox.common_{version}.jar、org.eclipse.jface_{version}.jar
+3. 额外依赖：
 ```xml
 <dependency>
     <groupId>commons-io</groupId>
@@ -30,4 +33,8 @@ java -jar uiautomatorviewer-standalone-1.0-SNAPSHOT-all.jar
 ```
 
 ### 预览
-![UIAutomatorViewer](https://indiehackers-1251406926.cos.ap-chengdu.myqcloud.com/hackers/3d1o1.png)
+Java8 预览图
+![UIAutomatorViewer-Java8](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022210039.png)
+![UIAutomatorViewer-Java8](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022215951.png)
+Java11 预览图
+![UIAutomatorViewer-Java11](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022209452.png)

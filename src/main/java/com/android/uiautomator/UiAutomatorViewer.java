@@ -86,12 +86,12 @@ public class UiAutomatorViewer extends ApplicationWindow {
     @Override
     protected void configureShell(Shell newShell) {
         super.configureShell(newShell);
-        newShell.setText("UI Automator Viewer by 程明");
+        newShell.setText("UI Automator Viewer");
     }
 
     @Override
     protected Point getInitialSize() {
-        return new Point(800, 600);
+        return new Point(1100, 700);
     }
 
     public void setModel(final UiAutomatorModel model, final File modelFile,
