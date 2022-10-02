@@ -3,12 +3,12 @@ Fork自项目：https://github.com/cmlanche/uiautomatorviewer-standalone
 
 ### 分支
 
-[main]:  兼容Jdk8+Jdk11
+main:   兼容Jdk8+Jdk11
 
 - 仅对原Fork仓库中部分资源和配置进行替换
 - 存在问题：树形结构中无法展示 resource-id
 
-[jdk1]: 仅支持Jdk11
+jdk11:  仅支持Jdk11
 
 - 在原Fork仓库基础上更新依赖的三方jar包，如swt.jar等
 - 可正常展示 resouce-id
