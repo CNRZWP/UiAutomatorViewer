@@ -10,7 +10,7 @@ Fork自项目：https://github.com/cmlanche/uiautomatorviewer-standalone
 <font color='red'>**树形图中无法展示 resource-id 信息**</font>
 
 ### 打包
-```mvn clean package```<br>
+```mvn clean package```<br><br>
 ![编译过程](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022232166.png)
 生成的 jar 文件位于 target 目录中：UiAutomatorViewer-2.0-all.jar
 
