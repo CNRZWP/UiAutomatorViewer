@@ -12,7 +12,7 @@ Fork自项目：https://github.com/cmlanche/uiautomatorviewer-standalone
 ### 打包
 ```mvn clean package```<br><br>
 ![编译过程](https://raw.githubusercontent.com/CNRZWP/blog-media/image/2022/202210022232166.png)
-生成的 jar 文件位于 target 目录中：UiAutomatorViewer-2.0-all.jar
+生成的 jar 文件位于：target/UiAutomatorViewer-2.0-all.jar
 
 ### 启动 (MacOS)
 ```java -XstartOnFirstThread -jar UiAutomatorViewer-2.0-all.jar```
