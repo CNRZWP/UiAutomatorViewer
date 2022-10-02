@@ -91,7 +91,7 @@ public class UiAutomatorViewer extends ApplicationWindow {
 
     @Override
     protected Point getInitialSize() {
-        return new Point(1100, 700);
+        return new Point(1200, 800);
     }
 
     public void setModel(final UiAutomatorModel model, final File modelFile,

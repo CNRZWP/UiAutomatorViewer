@@ -12,7 +12,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.7</version>
+            <version>2.11.0</version>
         </dependency>
         <!-- ddmlib 依赖的库 -->
         <dependency>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>com.android.tools.ddms</groupId>
             <artifactId>ddmlib</artifactId>
-            <version>26.0.0</version>
+            <version>30.3.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ddmlib-26.0.0-dev.jar</systemPath>
         </dependency>
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>org.eclipse</groupId>
             <artifactId>swt</artifactId>
-            <version>I20200830-1800</version>
+            <version>4.954</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/swt.jar</systemPath>
         </dependency>

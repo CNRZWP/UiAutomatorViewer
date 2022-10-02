@@ -28,7 +28,8 @@ public class DebugBridge {
 
     private static String getAdbLocation() {
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
-            return System.getProperty("user.dir") + File.separator + "adb";
+            final File adbFile = new File(System.getenv("ANDROID_HOME"), "/platform-tools/adb");
+            return adbFile.getAbsolutePath();
         }
         return System.getProperty("user.dir") + File.separator + "adb.exe";
     }
