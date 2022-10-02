@@ -3,17 +3,20 @@ Fork自项目：https://github.com/cmlanche/uiautomatorviewer-standalone
 
 ### 分支
 
-main:  兼容Jdk8+Jdk11，仅对原Fork仓库中部分资源和配置进行替换。存在问题：树形结构中无法展示 resource-id
+main:  兼容Jdk8+Jdk11
 
-jdk11: 仅支持Jdk11。在原Fork仓库基础上更新依赖的三方jar包，如swt.jar等。可正常展示 resouce-id
+	- 仅对原Fork仓库中部分资源和配置进行替换
+	- 存在问题：树形结构中无法展示 resource-id
+
+jdk11: 仅支持Jdk11
+
+- 在原Fork仓库基础上更新依赖的三方jar包，如swt.jar等
+- 可正常展示 resouce-id
 
 ### 改动
 1. 移除标题中的作者信息
 2. 替换窗口中的图标，解决大小不一致问题
 3. 修改默认窗口大小，避免图标不展示
-
-### 问题 (注意)
-<font color='red'>**树形图中无法展示 resource-id 信息**</font>
 
 ### 打包
 ```mvn clean package```<br><br>
